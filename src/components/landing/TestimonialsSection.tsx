@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Quote } from 'lucide-react'; // Using Quote icon
@@ -6,15 +8,14 @@ interface Testimonial {
   name: string;
   journeyHighlight: string;
   photoUrl: string;
-  aiHint: string;
+  aiHint?: string;
 }
 
 const testimonials: Testimonial[] = [
   {
     name: 'Sarah L.',
     journeyHighlight: '"PranaFlow has been a sanctuary for me. The trauma-informed yoga classes helped me reconnect with my body in a safe and supportive environment. I feel more grounded and at peace than ever before."',
-    photoUrl: 'https://placehold.co/100x100.png',
-    aiHint: 'woman smiling yoga'
+    photoUrl: 'https://images.unsplash.com/photo-1667053508464-eb11b394df83?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Michael B.',
