@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -7,13 +9,12 @@ export default function CallToActionSection() {
     <section 
       className="py-20 md:py-32 text-center text-white relative"
       style={{
-        backgroundImage: "url('https://placehold.co/1920x600.png')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1604078893234-ff3a1a5d5292?q=80&w=1922&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}
-      data-ai-hint="candles incense plants"
     >
       <div className="absolute inset-0 bg-deep-sage-green/70 z-0"></div> {/* Color overlay */}
       <div className="container mx-auto relative z-10 animate-fadeInUp">
