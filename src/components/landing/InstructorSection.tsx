@@ -5,7 +5,7 @@ interface Instructor {
   specialty: string;
   mantra: string;
   imageUrl: string;
-  aiHint: string;
+  aiHint?: string;
 }
 
 const instructors: Instructor[] = [
@@ -13,8 +13,7 @@ const instructors: Instructor[] = [
     name: 'Ananya Sharma',
     specialty: 'Vinyasa & Ayurveda',
     mantra: '"Flow with intention, live with presence."',
-    imageUrl: 'https://placehold.co/300x300.png',
-    aiHint: 'yoga instructor smiling'
+    imageUrl: 'https://images.unsplash.com/photo-1705164454513-d8274719fdf5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'David Miller',
@@ -49,8 +48,8 @@ export default function InstructorSection() {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {instructors.map((instructor, index) => (
-            <div 
-              key={instructor.name} 
+            <div
+              key={instructor.name}
               className="group relative overflow-hidden rounded-lg shadow-lg animate-fadeInUp"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
