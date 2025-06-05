@@ -1,4 +1,5 @@
 
+'use client';
 import Image from 'next/image';
 
 interface Instructor {
@@ -20,8 +21,7 @@ const instructors: Instructor[] = [
     name: 'David Miller',
     specialty: 'Restorative & Meditation',
     mantra: '"Stillness speaks when the mind listens."',
-    imageUrl: 'https://placehold.co/300x300.png',
-    aiHint: 'meditation teacher calm'
+    imageUrl: 'https://images.unsplash.com/photo-1732380795353-54cb0e4a1cc9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     name: 'Sofia Chen',
