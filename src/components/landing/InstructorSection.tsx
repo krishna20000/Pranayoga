@@ -33,8 +33,7 @@ const instructors: Instructor[] = [
     name: 'Marcus Green',
     specialty: 'Holistic Health Coach',
     mantra: '"Wellness is the harmony of mind, body, and spirit."',
-    imageUrl: 'https://placehold.co/300x300.png',
-    aiHint: 'health coach nature'
+    imageUrl: 'https://images.unsplash.com/photo-1732998377326-e5c542a2f690?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
 
