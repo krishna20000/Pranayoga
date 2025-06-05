@@ -1,11 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export const metadata = {
-  title: 'Terms of Service - PranaFlow',
-  description: 'Terms of Service for PranaFlow Institute.',
-};
-
 export default function TermsOfServicePage() {
   const [dateString, setDateString] = useState('');
 

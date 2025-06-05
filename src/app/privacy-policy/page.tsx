@@ -1,11 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-export const metadata = {
-  title: 'Privacy Policy - PranaFlow',
-  description: 'Privacy Policy for PranaFlow Institute.',
-};
-
 export default function PrivacyPolicyPage() {
   const [dateString, setDateString] = useState('');
 
