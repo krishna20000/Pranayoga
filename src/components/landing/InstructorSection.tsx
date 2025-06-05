@@ -1,0 +1,80 @@
+import Image from 'next/image';
+
+interface Instructor {
+  name: string;
+  specialty: string;
+  mantra: string;
+  imageUrl: string;
+  aiHint: string;
+}
+
+const instructors: Instructor[] = [
+  {
+    name: 'Ananya Sharma',
+    specialty: 'Vinyasa & Ayurveda',
+    mantra: '"Flow with intention, live with presence."',
+    imageUrl: 'https://placehold.co/300x300.png',
+    aiHint: 'yoga instructor smiling'
+  },
+  {
+    name: 'David Miller',
+    specialty: 'Restorative & Meditation',
+    mantra: '"Stillness speaks when the mind listens."',
+    imageUrl: 'https://placehold.co/300x300.png',
+    aiHint: 'meditation teacher calm'
+  },
+  {
+    name: 'Sofia Chen',
+    specialty: 'Trauma-Informed Yoga',
+    mantra: '"Healing is a journey, not a destination."',
+    imageUrl: 'https://placehold.co/300x300.png',
+    aiHint: 'therapist gentle'
+  },
+   {
+    name: 'Marcus Green',
+    specialty: 'Holistic Health Coach',
+    mantra: '"Wellness is the harmony of mind, body, and spirit."',
+    imageUrl: 'https://placehold.co/300x300.png',
+    aiHint: 'health coach nature'
+  },
+];
+
+export default function InstructorSection() {
+  return (
+    <section id="instructors" className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-charcoal-gray mb-4">Meet Our Guides</h2>
+        <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+          Our experienced and compassionate instructors are dedicated to supporting your journey towards well-being.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {instructors.map((instructor, index) => (
+            <div 
+              key={instructor.name} 
+              className="group relative overflow-hidden rounded-lg shadow-lg animate-fadeInUp"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
+              <Image
+                src={instructor.imageUrl}
+                alt={instructor.name}
+                width={300}
+                height={300}
+                className="w-full h-auto object-cover aspect-square rounded-lg transition-transform duration-500 group-hover:scale-110"
+                data-ai-hint={instructor.aiHint}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                <h3 className="text-2xl font-headline text-white mb-1">{instructor.name}</h3>
+                <p className="text-sm text-soft-gold mb-2">{instructor.specialty}</p>
+                <p className="text-xs text-sandstone-beige italic">{instructor.mantra}</p>
+              </div>
+               {/* Static display for when not hovered, for better initial visibility if needed */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                 <h3 className="text-xl font-headline text-white text-center">{instructor.name}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
