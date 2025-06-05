@@ -26,8 +26,7 @@ const testimonials: Testimonial[] = [
   {
     name: 'Jessica P.',
     journeyHighlight: '"I was skeptical about meditation, but the mindfulness sessions here made it accessible and profound. It\'s become an essential part of my daily routine for managing stress and finding clarity."',
-    photoUrl: 'https://placehold.co/100x100.png',
-    aiHint: 'person meditating serene'
+    photoUrl: 'https://images.unsplash.com/photo-1526835746352-0b9da4054862?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];
 
