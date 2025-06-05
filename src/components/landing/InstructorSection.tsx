@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 interface Instructor {
@@ -26,8 +27,7 @@ const instructors: Instructor[] = [
     name: 'Sofia Chen',
     specialty: 'Trauma-Informed Yoga',
     mantra: '"Healing is a journey, not a destination."',
-    imageUrl: 'https://placehold.co/300x300.png',
-    aiHint: 'therapist gentle'
+    imageUrl: 'https://images.unsplash.com/photo-1580997892007-69f89c8ce37f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
    {
     name: 'Marcus Green',
