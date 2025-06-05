@@ -21,12 +21,11 @@ export default function AboutSection() {
         <div className="animate-fadeInUp animation-delay-300"> {/* Simple fade in up on load with delay */}
           <div className="rounded-lg overflow-hidden shadow-xl aspect-video">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="https://images.unsplash.com/photo-1646523771996-b44552ac353e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Practitioner guiding breathwork"
               width={600}
               height={400}
               className="object-cover w-full h-full"
-              data-ai-hint="breathwork guidance"
             />
           </div>
         </div>
